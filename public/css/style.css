@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #87CEEB;
+}
+
+#ui-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: #ff69b4;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+input {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    margin: 10px;
+    outline: none;
+}

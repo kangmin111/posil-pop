@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>포실팡! 구름 레이스</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="ui-container">
+        <h1 class="logo">포실팡! 구름 레이스 ☁️</h1>
+        <div class="menu">
+            <button id="btn-create">방 만들기</button>
+            <input type="text" id="input-room" placeholder="방 코드 입력">
+            <button id="btn-join">방 참가</button>
+        </div>
+        <p id="error-msg"></p>
+    </div>
+    <div id="game-container" style="display: none;"></div>
+
+    <script type="module" src="js/game.js"></script>
+</body>
+</html>
